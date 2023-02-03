@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Primer_Parcial
@@ -16,7 +13,13 @@ namespace Primer_Parcial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#pragma warning disable CS0246 // El nombre del tipo o del espacio de nombres 'Ejercicio1' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
             Application.Run(new Ejercicio1());
+#pragma warning restore CS0246 // El nombre del tipo o del espacio de nombres 'Ejercicio1' no se encontró (¿falta una directiva using o una referencia de ensamblado?)
         }
+    }
+
+    internal class Ejercicio1 : Form
+    {
     }
 }
